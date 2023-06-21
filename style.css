@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./UI/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* navbar */
+.nav-link {
+    transition: .5s !important;
+}
+.nav-link:hover {
+    color: #26a8b9 !important;
+    transition: transform .5s !important;
+}
+/* banner */
+.banner-container {
+    background-color: #B5EDF4;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B5EDF4;
+    width: 40%;
+}
+.banner-text h2 {
+    font-size: 100px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bolder;
+    line-height: 75px;
+}
+.banner-img {
+    width: 40%;
+}
+.banner-img img{
+    width: 100%;
+}
+.btn {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    width: 225px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.btnBanner {
+   margin-top: 20px;
+    background-color: #000;
+    color: #fff;  
+}
+.btnBanner:hover{
+    background-color: #B5EDF4;
+    border: 1px solid #000;
+    color: #000;
+}
+/* header */
+.header{
+    display:flex;
+    justify-content: center;
+}
+.header h3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+}
+/* category */
+.hide {
+    display: none;
+}
+.product-category {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.product-category a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color:#26a8b9;
+    text-decoration: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.product-category a:hover {
+    transform:scale(1.2);
+}
+/* product */
+#product {
+    margin-top: 20px;
+}
+.btn-add-to-cart {
+    background-color: #26a8b9 !important;
+    transition: 0.5s ease !important;
+}
+.btn-add-to-cart:hover {
+    background-color: #fff !important;
+    border: 1px solid #26a8b9 !important;
+    color: #26a8b9 !important;
+}
+.card-body h5 {
+    color:#26a8b9 !important; 
+}
+.products {
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* contact us */
+.contact-message {
+    display: flex;
+}
+.contact-message p {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.btn-form {
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 95%;
+    margin-bottom: 10px;
+    border: none !important;
+}
+label {
+    width: 100%;
+    text-justify:inter-cluster;
+}
+.textInputName, .textInputEmail, .messageIntut{
+    padding: 10px;
+    width: 100%;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+}
+.textInputName::placeholder .textInputEmail::placeholder .messageIntut::placeholder{
+    color: #26a8b9;
+}
+.messageIntut { 
+    height: 100px;
+}
+.button {
+    background-color: #26a8b9;
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.btn-submit {
+    width: 100%;
+}
+.button:hover {
+    background: none;
+    border: 1px solid #26a8b9;
+}
+/* Cart*/
+.product-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content:flex-start;
+    border-bottom: 4px solid;
+    margin: 0 auto;
+}
+.product-name {
+    width: 45%;
+}
+.price {
+    width: 15%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}
+.total {
+    width: 10%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}
+.qty {
+    width: 30%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+}
+.cart-img {
+    width: 75px;
+}
+.remove-icon {
+    color: #26a8b9;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+.allProducts {
+    display: flex;
+}
+.basketTotalContainer {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle {
+    width: 30%;;
+}
+.basketTotal {
+    width: 10%;
+}
+.units {
+    width: 30%;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-item .units {
+    flex: 1;
+  }
+  .cart-item .units .number {
+    margin: 0 5px;
+    color: #26a8b9;
+    font-size: 18px;
+  }
+  .cart-item .units .btn {
+    width: 20px;
+    height: 20px; 
+    color: #26a8b9;
+    border-radius: 50%; 
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .add-icon, .remove-icon {
+    color: #26a8b9;
+  }
+  @media all and (max-width:2300px) {
+    .banner-text h2 {
+        font-size: 80px;
+        line-height: 60px;
+    }
+}
+@media all and (max-width:1700px) {
+    .banner-text h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+@media all and (max-width:1200px) {
+    .banner-text h2 {
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .btn {
+        width: 190px;
+        height: 60px;
+    }
+    .header h3{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width:1000px) {
+    .banner-text h2 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+}
+@media all and (max-width:770px) {
+    .banner-text h2 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+    .btn {
+        width: 160px;
+        height: 55px;
+        font-size: 12px;
+    }
+}
+@media all and (max-width:650px) {
+    .banner-text h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .btn {
+        width: 140px;
+        height: 50px;
+        font-size: 10px;
+    }
+    .qty {
+        font-size: 10px;
+    }
+    .price {
+        font-size: 10px;
+    }
+    .total {
+        font-size: 10px;
+    }
+    .product-name {
+        font-size: 10px;
+    }
+    .cart-img {
+        width: 30px;
+    }
+    .basketTotalTitle {
+        font-size: 15px;
+    }
+    .basketTotal {
+        font-size: 15px;
+    }
+    .contact-message p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
